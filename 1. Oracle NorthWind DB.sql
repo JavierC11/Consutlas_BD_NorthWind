@@ -393,6 +393,6 @@ SELECT Orders.ShippedDate, Orders.OrderID, Order_Subtotals.Subtotal
 FROM Orders, Order_Subtotals 
 where Orders.OrderID = Order_Subtotals.OrderID
 and Orders.ShippedDate IS NOT NULL;
-#NOMBRE?
+
 
 create synonym "Summary of Sales by Year" for Summary_of_Sales_by_Year;
